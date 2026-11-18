@@ -1,0 +1,276 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#0A0A0A"
+    },
+    {
+      "name": "screen",
+      "value": "#0A0A0A"
+    },
+    {
+      "name": "card",
+      "value": "#111111"
+    },
+    {
+      "name": "grouped_card",
+      "value": "#1A1B1B"
+    },
+    {
+      "name": "fg",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "fg_secondary",
+      "value": "#838383"
+    },
+    {
+      "name": "fg_tertiary",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "border",
+      "value": "#232323"
+    },
+    {
+      "name": "separator",
+      "value": "#8C191919"
+    },
+    {
+      "name": "primary",
+      "value": "#346BF1"
+    },
+    {
+      "name": "primary_soft",
+      "value": "#1A2A55"
+    },
+    {
+      "name": "prominent",
+      "value": "#F5F5F5"
+    },
+    {
+      "name": "prominent_fg",
+      "value": "#0A0A0A"
+    },
+    {
+      "name": "composer_surface",
+      "value": "#E61A1B1B"
+    },
+    {
+      "name": "composer_border",
+      "value": "#CC2A2A2A"
+    },
+    {
+      "name": "user_bubble",
+      "value": "#1A1B1B"
+    },
+    {
+      "name": "warning_bg",
+      "value": "#312108"
+    },
+    {
+      "name": "warning_fg",
+      "value": "#FFB900"
+    },
+    {
+      "name": "danger_bg",
+      "value": "#301214"
+    },
+    {
+      "name": "danger_fg",
+      "value": "#FF6467"
+    },
+    {
+      "name": "success_fg",
+      "value": "#4ADE80"
+    },
+    {
+      "name": "glass",
+      "value": "#BD111111"
+    },
+    {
+      "name": "code_bg",
+      "value": "#161616"
+    },
+    {
+      "name": "chip_bg",
+      "value": "#1A1B1B"
+    },
+    {
+      "name": "status_working",
+      "value": "#38BDF8"
+    },
+    {
+      "name": "status_attention",
+      "value": "#FFB900"
+    },
+    {
+      "name": "status_failed",
+      "value": "#FF6467"
+    },
+    {
+      "name": "attachment_veil",
+      "value": "#99000000"
+    },
+    {
+      "name": "status_unread",
+      "value": "#34D399"
+    },
+    {
+      "name": "status_done",
+      "value": "#6E6E6E"
+    },
+    {
+      "name": "status_idle",
+      "value": "#3A3A3A"
+    },
+    {
+      "name": "scrim",
+      "value": "#66000000"
+    },
+    {
+      "name": "row_pressed",
+      "value": "#161616"
+    },
+    {
+      "name": "row_selected",
+      "value": "#1A1B1B"
+    },
+    {
+      "name": "skeleton",
+      "value": "#1C1C1E"
+    },
+    {
+      "name": "accent_ring",
+      "value": "#33346BF1"
+    },
+    {
+      "name": "status_backdrop",
+      "value": "#E60A0A0A"
+    },
+    {
+      "name": "status_input",
+      "value": "#A5B4FC"
+    },
+    {
+      "name": "drawer",
+      "value": "#000000"
+    },
+    {
+      "name": "hairline",
+      "value": "#1E1E1E"
+    },
+    {
+      "name": "drawer_backdrop",
+      "value": "#EB000000"
+    },
+    {
+      "name": "diff_add_bg",
+      "value": "#2E5BD27A"
+    },
+    {
+      "name": "diff_del_bg",
+      "value": "#2EFF6B61"
+    },
+    {
+      "name": "diff_add_fg",
+      "value": "#5BD27A"
+    },
+    {
+      "name": "diff_del_fg",
+      "value": "#FF8A80"
+    },
+    {
+      "name": "chart_claude",
+      "value": "#E8896A"
+    },
+    {
+      "name": "chart_codex",
+      "value": "#6E9BFF"
+    },
+    {
+      "name": "chart_other",
+      "value": "#8A8A92"
+    },
+    {
+      "name": "pr_merged",
+      "value": "#A371F7"
+    },
+    {
+      "name": "fab_shadow",
+      "value": "#73000000"
+    },
+    {
+      "name": "project_gray",
+      "value": "#9CA3AF"
+    },
+    {
+      "name": "project_red",
+      "value": "#F87171"
+    },
+    {
+      "name": "project_orange",
+      "value": "#FB923C"
+    },
+    {
+      "name": "project_amber",
+      "value": "#FBBF24"
+    },
+    {
+      "name": "project_yellow",
+      "value": "#FACC15"
+    },
+    {
+      "name": "project_lime",
+      "value": "#A3E635"
+    },
+    {
+      "name": "project_green",
+      "value": "#4ADE80"
+    },
+    {
+      "name": "project_emerald",
+      "value": "#34D399"
+    },
+    {
+      "name": "project_teal",
+      "value": "#2DD4BF"
+    },
+    {
+      "name": "project_cyan",
+      "value": "#22D3EE"
+    },
+    {
+      "name": "project_sky",
+      "value": "#38BDF8"
+    },
+    {
+      "name": "project_blue",
+      "value": "#60A5FA"
+    },
+    {
+      "name": "project_indigo",
+      "value": "#818CF8"
+    },
+    {
+      "name": "project_violet",
+      "value": "#A78BFA"
+    },
+    {
+      "name": "project_purple",
+      "value": "#C084FC"
+    },
+    {
+      "name": "project_fuchsia",
+      "value": "#E879F9"
+    },
+    {
+      "name": "project_pink",
+      "value": "#F472B6"
+    },
+    {
+      "name": "project_rose",
+      "value": "#FB7185"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="xterm.css">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+  :root { --bg: #FFFFFF; }
+  :root.dark { --bg: #0F0F11; }
+  #term { position: absolute; top: 4px; right: 4px; bottom: 0; left: 10px; }
+  .xterm .xterm-viewport { background: transparent !important; overflow-y: auto; }
+  .xterm .xterm-viewport::-webkit-scrollbar { width: 0; }
+</style>
+</head>
+<body>
+<div id="term"></div>
+<script src="xterm.js"></script>
+<script src="addon-fit.js"></script>
+<script>
+  // Bridge to the HarmonyOS page: t3native.onReady/onInput/onResize go out, window.t3.* comes in.
+  const params = new URLSearchParams(location.search);
+  const LIGHT = {
+    background: '#FFFFFF', foreground: '#1F1F22', cursor: '#1F1F22', cursorAccent: '#FFFFFF',
+    selectionBackground: '#0A59F733',
+    black: '#1F1F22', red: '#D3302F', green: '#2E8A3E', yellow: '#A06A00', blue: '#0A59F7', magenta: '#9B3FC6',
+    cyan: '#11829A', white: '#8A8A90', brightBlack: '#5C5C63', brightRed: '#E8443A', brightGreen: '#3AA351',
+    brightYellow: '#B98500', brightBlue: '#3D7BFF', brightMagenta: '#B65BDE', brightCyan: '#1CA0B9', brightWhite: '#B8B8BE',
+  };
+  const DARK = {
+    background: '#0F0F11', foreground: '#E6E6EA', cursor: '#E6E6EA', cursorAccent: '#0F0F11',
+    selectionBackground: '#5B8CFF44',
+    black: '#3A3A40', red: '#FF6B61', green: '#5BD27A', yellow: '#F2C14E', blue: '#6E9BFF', magenta: '#D08CFF',
+    cyan: '#5ED0E6', white: '#C9C9CF', brightBlack: '#6A6A72', brightRed: '#FF8A80', brightGreen: '#7BE596',
+    brightYellow: '#FFD66E', brightBlue: '#8FB2FF', brightMagenta: '#E0A8FF', brightCyan: '#86E1F0', brightWhite: '#FFFFFF',
+  };
+  let dark = params.get('dark') === '1';
+  document.documentElement.classList.toggle('dark', dark);
+  const term = new Terminal({
+    fontFamily: 'monospace',
+    fontSize: Number(params.get('fontSize') || 12),
+    lineHeight: 1.15,
+    cursorBlink: true,
+    scrollback: 5000,
+    allowProposedApi: true,
+    convertEol: false,
+    theme: dark ? DARK : LIGHT,
+  });
+  const fit = new FitAddon.FitAddon();
+  term.loadAddon(fit);
+  const host = document.getElementById('term');
+  term.open(host);
+  const send = (name, ...args) => {
+    try { if (window.t3native && window.t3native[name]) window.t3native[name](...args); } catch (e) {}
+  };
+  let lastSize = '';
+  const refit = () => {
+    try { fit.fit(); } catch (e) {}
+    const size = term.cols + 'x' + term.rows;
+    if (size !== lastSize) { lastSize = size; send('onResize', term.cols, term.rows); }
+  };
+  term.onData((data) => send('onInput', data));
+  term.onBinary((data) => send('onInput', data));
+  new ResizeObserver(() => refit()).observe(host);
+  window.t3 = {
+    write: (data) => term.write(data),
+    reset: (history) => { term.reset(); if (history) term.write(history); },
+    clear: () => term.clear(),
+    focus: () => term.focus(),
+    blur: () => term.blur(),
+    setDark: (value) => {
+      dark = !!value;
+      document.documentElement.classList.toggle('dark', dark);
+      term.options.theme = dark ? DARK : LIGHT;
+    },
+    setFontSize: (size) => { term.options.fontSize = size; refit(); },
+    size: () => term.cols + 'x' + term.rows,
+    text: () => {
+      const buffer = term.buffer.active;
+      const lines = [];
+      for (let i = 0; i < buffer.length; i++) lines.push(buffer.getLine(i).translateToString(true));
+      return lines.join('\n').trimEnd();
+    },
+  };
+  requestAnimationFrame(() => {
+    refit();
+    send('onReady', term.cols, term.rows);
+  });
+</script>
+</body>
+</html>

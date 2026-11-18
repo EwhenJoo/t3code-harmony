@@ -1,0 +1,276 @@
+{
+  "color": [
+    {
+      "name": "start_window_background",
+      "value": "#FCFCFC"
+    },
+    {
+      "name": "screen",
+      "value": "#FCFCFC"
+    },
+    {
+      "name": "card",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "grouped_card",
+      "value": "#F4F4F5"
+    },
+    {
+      "name": "fg",
+      "value": "#27272A"
+    },
+    {
+      "name": "fg_secondary",
+      "value": "#6F6F79"
+    },
+    {
+      "name": "fg_tertiary",
+      "value": "#8B8B94"
+    },
+    {
+      "name": "border",
+      "value": "#E4E4E7"
+    },
+    {
+      "name": "separator",
+      "value": "#8CE4E4E7"
+    },
+    {
+      "name": "primary",
+      "value": "#1B4ED8"
+    },
+    {
+      "name": "primary_soft",
+      "value": "#E0E6F7"
+    },
+    {
+      "name": "prominent",
+      "value": "#27272A"
+    },
+    {
+      "name": "prominent_fg",
+      "value": "#FCFCFC"
+    },
+    {
+      "name": "composer_surface",
+      "value": "#F0F4F4F5"
+    },
+    {
+      "name": "composer_border",
+      "value": "#CCE4E4E7"
+    },
+    {
+      "name": "user_bubble",
+      "value": "#F2F2F3"
+    },
+    {
+      "name": "warning_bg",
+      "value": "#FCF4E8"
+    },
+    {
+      "name": "warning_fg",
+      "value": "#BB4D00"
+    },
+    {
+      "name": "danger_bg",
+      "value": "#FCEBEC"
+    },
+    {
+      "name": "danger_fg",
+      "value": "#C10007"
+    },
+    {
+      "name": "success_fg",
+      "value": "#15803D"
+    },
+    {
+      "name": "glass",
+      "value": "#BDFFFFFF"
+    },
+    {
+      "name": "code_bg",
+      "value": "#F4F4F5"
+    },
+    {
+      "name": "chip_bg",
+      "value": "#F4F4F5"
+    },
+    {
+      "name": "status_working",
+      "value": "#0284C7"
+    },
+    {
+      "name": "status_attention",
+      "value": "#BB4D00"
+    },
+    {
+      "name": "status_failed",
+      "value": "#C10007"
+    },
+    {
+      "name": "attachment_veil",
+      "value": "#99FFFFFF"
+    },
+    {
+      "name": "status_unread",
+      "value": "#059669"
+    },
+    {
+      "name": "status_done",
+      "value": "#8B8B94"
+    },
+    {
+      "name": "status_idle",
+      "value": "#C4C4CC"
+    },
+    {
+      "name": "scrim",
+      "value": "#33000000"
+    },
+    {
+      "name": "row_pressed",
+      "value": "#EDEDEF"
+    },
+    {
+      "name": "row_selected",
+      "value": "#FFFFFF"
+    },
+    {
+      "name": "skeleton",
+      "value": "#ECECEF"
+    },
+    {
+      "name": "accent_ring",
+      "value": "#331B4ED8"
+    },
+    {
+      "name": "status_backdrop",
+      "value": "#E6FCFCFC"
+    },
+    {
+      "name": "status_input",
+      "value": "#4F46E5"
+    },
+    {
+      "name": "drawer",
+      "value": "#F4F4F5"
+    },
+    {
+      "name": "hairline",
+      "value": "#E8E8EB"
+    },
+    {
+      "name": "drawer_backdrop",
+      "value": "#EBF4F4F5"
+    },
+    {
+      "name": "diff_add_bg",
+      "value": "#1F2E8A3E"
+    },
+    {
+      "name": "diff_del_bg",
+      "value": "#1FD3302F"
+    },
+    {
+      "name": "diff_add_fg",
+      "value": "#2E8A3E"
+    },
+    {
+      "name": "diff_del_fg",
+      "value": "#D3302F"
+    },
+    {
+      "name": "chart_claude",
+      "value": "#D97757"
+    },
+    {
+      "name": "chart_codex",
+      "value": "#3D7BFF"
+    },
+    {
+      "name": "chart_other",
+      "value": "#9A9AA2"
+    },
+    {
+      "name": "pr_merged",
+      "value": "#8250DF"
+    },
+    {
+      "name": "fab_shadow",
+      "value": "#1F000000"
+    },
+    {
+      "name": "project_gray",
+      "value": "#4B5563"
+    },
+    {
+      "name": "project_red",
+      "value": "#DC2626"
+    },
+    {
+      "name": "project_orange",
+      "value": "#EA580C"
+    },
+    {
+      "name": "project_amber",
+      "value": "#D97706"
+    },
+    {
+      "name": "project_yellow",
+      "value": "#CA8A04"
+    },
+    {
+      "name": "project_lime",
+      "value": "#65A30D"
+    },
+    {
+      "name": "project_green",
+      "value": "#16A34A"
+    },
+    {
+      "name": "project_emerald",
+      "value": "#059669"
+    },
+    {
+      "name": "project_teal",
+      "value": "#0D9488"
+    },
+    {
+      "name": "project_cyan",
+      "value": "#0891B2"
+    },
+    {
+      "name": "project_sky",
+      "value": "#0284C7"
+    },
+    {
+      "name": "project_blue",
+      "value": "#2563EB"
+    },
+    {
+      "name": "project_indigo",
+      "value": "#4F46E5"
+    },
+    {
+      "name": "project_violet",
+      "value": "#7C3AED"
+    },
+    {
+      "name": "project_purple",
+      "value": "#9333EA"
+    },
+    {
+      "name": "project_fuchsia",
+      "value": "#C026D3"
+    },
+    {
+      "name": "project_pink",
+      "value": "#DB2777"
+    },
+    {
+      "name": "project_rose",
+      "value": "#E11D48"
+    }
+  ]
+}
