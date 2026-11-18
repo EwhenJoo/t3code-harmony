@@ -105,6 +105,7 @@ tools/mock-t3/   Mock T3 服务端（测试用）
 ```powershell
 pwsh ./scripts/build.ps1            # 生成 entry/build/default/outputs/default/entry-default-unsigned.hap
 pwsh ./scripts/deploy.ps1 -Shot shot.jpeg   # 编译 + 安装到 hdc 设备 + 启动 + 截图
+pwsh ./scripts/build.ps1 -Mode release      # 发布用的正式包（不接受 dev-connect 深链），改名为 t3code-harmony-<版本>-unsigned.hap 上传 Releases
 ```
 
 也可以直接用 DevEco Studio 打开本目录。模拟器访问宿主机用 `10.0.2.2`，例如：

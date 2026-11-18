@@ -18,6 +18,16 @@ T3 Code 的鸿蒙原生客户端：在手机上查看和操作你电脑上运行
 - **通知**：需要你处理、任务完成或失败时提醒，点开直达对话
 - **鸿蒙特性**：折叠屏双栏、沉浸光感、新建按钮跟随握持手、深浅色
 
+### 安装
+
+需要 HarmonyOS 6.1 或更高版本。App 还没有上架应用市场，需要从电脑侧载：
+
+1. 在 [Releases](https://github.com/EwhenJoo/t3code-harmony/releases/latest) 下载 `t3code-harmony-<版本>-unsigned.hap`。
+2. 手机打开开发者模式：「设置 → 关于本机」连续点「软件版本」，再到「设置 → 系统 → 开发者选项」打开「USB 调试」或「无线调试」。
+3. 在电脑上用侧载工具（例如小白调试助手）登录你自己的华为账号，给安装包自动签名并安装到手机。
+
+这样安装的 App 在打开时照常提醒，但 App 关着时收不到推送：推送需要用你自己的 AGC 项目编译 App（见[开发说明](docs/DEVELOPMENT.md)）。
+
 ### 推送小助手
 
 App 关着时的通知由推送小助手经华为 Push Kit 发送。把它装在一台常开的电脑上即可（Windows / macOS / Linux，需要 Node.js 22+）。
@@ -65,6 +75,16 @@ A native HarmonyOS client for T3 Code: follow and drive the T3 Code running on y
 - **PRs and usage**: review and merge pull requests; see cost, tokens and limits
 - **Notifications**: when something needs you, finishes or fails; tap to open the thread
 - **HarmonyOS**: two-pane layout on foldables, immersive light material, new-thread button follows your holding hand, light and dark themes
+
+### Install
+
+Requires HarmonyOS 6.1 or later. The app is not on AppGallery yet, so install it from a computer:
+
+1. Download `t3code-harmony-<version>-unsigned.hap` from [Releases](https://github.com/EwhenJoo/t3code-harmony/releases/latest).
+2. Turn on developer mode on the phone: in Settings → About phone, tap Software version repeatedly, then turn on USB debugging or Wireless debugging in Settings → System → Developer options.
+3. On your computer, use a sideloading tool (for example 小白调试助手) to sign the package with your own Huawei account and install it on the phone.
+
+Installed this way, the app notifies you while it is open, but cannot receive push notifications while it is closed: push needs the app built with your own AGC project (see [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md)).
 
 ### Push helper
 
